@@ -53,7 +53,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
  */
 @TeleOp(name = "Robot: Field Relative Mecanum Drive", group = "Robot")
 @Disabled
-public class RobotTeleopMecanumFieldRelativeDrive extends OpMode {
+public class MecanumFieldRelativeDrive25812 extends OpMode {
     // This declares the four motors needed
     DcMotor frontLeftDrive;
     DcMotor frontRightDrive;
