@@ -106,6 +106,19 @@ public class MecanumFieldRelativeDrive25812 extends OpMode {
         if (gamepad1.a) {
             imu.resetYaw();
         }
+        //This part controls the input and output, "launch" is the output
+        if (gamepad1.b){
+          launch.setPower(1);
+        } else if (gamepad1.x){
+            input.setPower(1);
+        } else{
+            launch.setPower(0);
+            input.setPower(0);
+        }
+        // when we're coding the gate, we should try to make it autonomous so that
+        // like we can get the speed of the launch motor and when the launch motor hits its
+        // max speed the gate automatically opens.
+
         // If you press the left bumper, you get a drive from the point of view of the robot
         // (much like driving an RC vehicle)
         if (gamepad1.left_bumper) {
