@@ -82,6 +82,10 @@ public class BasicOpMode_Iterative25812 extends OpMode
         // Note: The settings here assume direct drive on left and right wheels.  Gear Reduction or 90 Deg drives may require direction flips
         //leftDrive.setDirection(DcMotor.Direction.REVERSE);
         //rightDrive.setDirection(DcMotor.Direction.FORWARD);
+        frontLeft.setDirection(DcMotor.Direction. REVERSE);
+        frontRight.setDirection(DcMotor.Direction. REVERSE);
+        backRight.setDirection(DcMotor.Direction. FORWARD);
+        backLeft.setDirection(DcMotor.Direction. FORWARD);
 
         // Tell the driver that initialization is complete.
         telemetry.addData("Status", "Initialized");
